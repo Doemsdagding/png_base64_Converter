@@ -14,7 +14,14 @@ from kivy.graphics.texture import Texture
 import numpy as np
 from kivy.uix.filechooser import FileChooserIconView
 from kivy.uix.popup import Popup
+from kivy.resources import resource_add_path
 
+def resource_path(relative_path):
+    if hasattr(sys, '_MEIPASS'):
+        return os.path.join(sys._MEIPASS, relative_path)
+    return os.path.join(os.path.abspath("."), relative_path)
+
+resource_add_path(resource_path('.'))
 
 kivy.require("2.3.0")
 
