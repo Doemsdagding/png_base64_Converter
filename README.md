@@ -1,7 +1,7 @@
 # Base64 Image Converter
 
-A sleek and user-friendly desktop application built with Kivy that converts images to Base64 format.
-
+A user-friendly desktop application built with Kivy that converts images to Base64 format.
+<img src="Screenshot.png" width="50%">
 ## Features
 
 - Modern UI with smooth animations and rounded corners
@@ -17,6 +17,7 @@ A sleek and user-friendly desktop application built with Kivy that converts imag
 - Kivy 2.3.0
 - Pillow
 - NumPy
+- (pyinstaller) *to create an .exe if desired*
 
 ## Installation
 
@@ -57,8 +58,8 @@ The application features a custom design with:
 
 - `base.py` - Main application logic
 - `base.kv` - Kivy UI layout and styling
-- `gradient.py` - Gradient utility module
 - `madimione-regular.otf` - Custom font file
+- `packeger.py` - Easy method to make it into a .exe
 
 ## Contributing
 
